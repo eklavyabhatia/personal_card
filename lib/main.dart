@@ -10,6 +10,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.teal,
+        body: SafeArea(
+          child: Column(
+            children: [
+              CircleAvatar(
+                radius: 50,
+                backgroundImage: AssetImage('images/eklavya.jpeg'),
+              )
+            ],
+          ),
+        ),
       ),
     );
   }
